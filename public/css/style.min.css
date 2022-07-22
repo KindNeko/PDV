@@ -137,3 +137,114 @@ body {
   margin: 0 auto;
   overflow: hidden;
 }
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  background: linear-gradient(to right, #fff 65%, #0B7572 50%);
+  width: 100%;
+  height: 787px;
+}
+.header__content {
+  padding-top: 144px;
+}
+.header__text-box {
+  margin-right: 70px;
+}
+.header__title {
+  font-family: "Exo 2", sans-serif;
+  font-size: 52px;
+  line-height: 125%;
+  font-weight: 600;
+  color: #363738;
+  padding-bottom: 40px;
+}
+.header__subtitle {
+  padding-bottom: 40px;
+}
+.header__link {
+  color: #363738;
+  font-weight: 700;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #FFCE50;
+}
+.header__images {
+  display: inline-block;
+  width: 635px;
+  height: 505px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 39px;
+  }
+  .header {
+    height: 748px;
+    background: linear-gradient(to right, #fff 80%, #0B7572 50%);
+  }
+  .header__content {
+    flex-direction: column;
+    padding-top: 70px;
+  }
+  .header__text-box {
+    margin-bottom: 56px;
+    width: 523px;
+  }
+  .header__title {
+    font-size: 44px;
+    line-height: 55px;
+  }
+  .header__subtitle {
+    padding-bottom: 51px;
+    line-height: 24px;
+  }
+  .header__images {
+    display: inline-block;
+    width: 690px;
+    height: 314px;
+  }
+}
+@media screen and (max-width: 576px) {
+  body {
+    font-size: 15px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .header {
+    background: #0B7572;
+    color: white;
+    height: 766px;
+  }
+  .header__content {
+    padding-top: 75px;
+  }
+  .header__text-box {
+    width: 344px;
+    margin-bottom: 40px;
+  }
+  .header__title {
+    font-size: 28px;
+    line-height: 35px;
+    padding-bottom: 32px;
+    color: inherit;
+  }
+  .header__subtitle {
+    line-height: 22.5px;
+    padding-bottom: 32px;
+  }
+  .header__link {
+    color: inherit;
+  }
+  .header__images {
+    width: 345px;
+    height: 253px;
+  }
+}
