@@ -108,7 +108,7 @@ body {
   font-size: 48px;
   font-weight: 600;
   line-height: 65px;
-  color: #000;
+  color: #363738;
 }
 
 html,
@@ -143,13 +143,28 @@ body {
   align-items: center;
 }
 
+.svg-manufacturer-search-dims {
+  width: 92px;
+  height: 92px;
+}
+
+.svg-sample-delivery-dims {
+  width: 92px;
+  height: 92px;
+}
+
+.svg-search-for-manufacturers-dims {
+  width: 92px;
+  height: 92px;
+}
+
 .header {
   background: linear-gradient(to right, #fff 65%, #0B7572 50%);
   width: 100%;
   height: 787px;
 }
 .header__content {
-  padding-top: 144px;
+  padding-top: 80px;
 }
 .header__text-box {
   margin-right: 70px;
@@ -177,6 +192,46 @@ body {
   height: 505px;
   transform: matrix(-1, 0, 0, 1, 0, 0);
   border-radius: 10px;
+}
+
+.service {
+  width: 1220px;
+  background-color: #fff;
+  height: 341px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px;
+  margin-top: -120px;
+}
+.service__item {
+  padding-top: 40px;
+  padding-right: 122px;
+  padding-bottom: 56px;
+  padding-left: 80px;
+}
+.service__list {
+  width: 250px;
+  margin-right: 169px;
+}
+.service__list:not(:first-child)::after {
+  content: "";
+  display: block;
+  position: relative;
+  right: 200px;
+  bottom: 150px;
+  transform: rotate(90deg);
+  width: 228px;
+  border: 1px solid #D7D7DD;
+}
+.service__title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  color: #363738;
+  font-size: 20px;
+  line-height: 27px;
+  padding-bottom: 16px;
+}
+.service__img {
+  margin-bottom: 24px;
 }
 
 @media screen and (max-width: 768px) {
@@ -208,6 +263,47 @@ body {
     display: inline-block;
     width: 690px;
     height: 314px;
+  }
+  .service {
+    height: 544px;
+    margin-top: 36px;
+    border: none;
+    box-shadow: none;
+  }
+  .service__item {
+    flex-direction: column;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+  .service__box-text {
+    width: 600px;
+  }
+  .service__list {
+    border-radius: 15px;
+    box-shadow: 0 0 5px;
+    margin-bottom: 16px;
+    width: 690px;
+    height: 164px;
+    padding-top: 32px;
+    padding-right: 140px;
+    padding-bottom: 40px;
+    padding-left: 32px;
+  }
+  .service__list:not(:first-child)::after {
+    content: "";
+    display: block;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    transform: none;
+    width: 0;
+    border: none;
+  }
+  .service__img {
+    float: left;
+    margin-right: 32px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -246,5 +342,65 @@ body {
   .header__images {
     width: 345px;
     height: 253px;
+  }
+  .service {
+    width: 345px;
+    height: 838px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 5px;
+    margin-top: -80px;
+  }
+  .service__item {
+    margin-top: 24px;
+  }
+  .service__list {
+    border-radius: 0;
+    box-shadow: none;
+    width: 286px;
+    height: 278px;
+    padding: 24px;
+    margin-bottom: 14px;
+  }
+  .service__list:nth-child(-n+2)::after {
+    content: "";
+    display: block;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    top: 40px;
+    transform: none;
+    width: 228px;
+    border: 1px solid #D7D7DD;
+  }
+  .service__box-text {
+    width: 286px;
+  }
+  .service__title {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    color: #363738;
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 12px;
+  }
+  .service__text {
+    font-size: 15px;
+  }
+  .service__img {
+    float: none;
+    margin-bottom: 16px;
+  }
+  .svg-manufacturer-search-dims {
+    width: 68px;
+    height: 68px;
+  }
+  .svg-sample-delivery-dims {
+    width: 68px;
+    height: 68px;
+  }
+  .svg-search-for-manufacturers-dims {
+    width: 68px;
+    height: 68px;
   }
 }
