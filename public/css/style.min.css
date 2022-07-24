@@ -111,6 +111,14 @@ body {
   color: #363738;
 }
 
+.mini-title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  color: #363738;
+  font-size: 20px;
+  line-height: 30px;
+}
+
 html,
 body {
   height: 100%;
@@ -199,8 +207,9 @@ body {
   background-color: #fff;
   height: 341px;
   border-radius: 15px;
-  box-shadow: 0 0 5px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
   margin-top: -120px;
+  margin-bottom: 100px;
 }
 .service__item {
   padding-top: 40px;
@@ -232,6 +241,39 @@ body {
 }
 .service__img {
   margin-bottom: 24px;
+}
+
+.job-type__box-title {
+  width: 75%;
+  margin-bottom: 40px;
+}
+.job-type__box-text {
+  width: 466px;
+  margin-left: 36px;
+}
+.job-type__box-votes {
+  margin-left: 140px;
+  border-bottom: 3px solid #FFCE50;
+}
+.job-type__title {
+  padding-bottom: 32px;
+}
+.job-type__form-title {
+  padding-bottom: 24px;
+}
+.job-type__work-label {
+  width: 687px;
+  height: 176px;
+  background: linear-gradient(to bottom right, #fff 80%, #E9E9EC 50%);
+  margin-bottom: 16px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+.job-type__choise {
+  margin-left: 40px;
+}
+.job-type .votes__title {
+  padding-bottom: 8px;
 }
 
 @media screen and (max-width: 768px) {
@@ -282,7 +324,7 @@ body {
   }
   .service__list {
     border-radius: 15px;
-    box-shadow: 0 0 5px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
     margin-bottom: 16px;
     width: 690px;
     height: 164px;
@@ -304,6 +346,29 @@ body {
   .service__img {
     float: left;
     margin-right: 32px;
+  }
+  .job-type__box-title {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .job-type__box-text {
+    width: 466px;
+    margin-left: 36px;
+  }
+  .job-type__box-votes {
+    margin-left: 140px;
+    border-bottom: 3px solid #FFCE50;
+    display: none;
+  }
+  .job-type__title {
+    padding-bottom: 32px;
+    font-size: 44px;
+  }
+  .job-type__form-title {
+    padding-bottom: 24px;
+  }
+  .job-type__choise {
+    margin-left: 40px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -347,8 +412,8 @@ body {
     width: 345px;
     height: 838px;
     background-color: #fff;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
     border-radius: 15px;
-    box-shadow: 0 0 5px;
     margin-top: -80px;
   }
   .service__item {
@@ -390,6 +455,48 @@ body {
   .service__img {
     float: none;
     margin-bottom: 16px;
+  }
+  .job-type__box-title {
+    width: 100%;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .job-type__box-text {
+    width: 256px;
+    margin-left: 36px;
+  }
+  .job-type__box-votes {
+    margin-left: 140px;
+    border-bottom: 3px solid #FFCE50;
+    display: none;
+  }
+  .job-type__title {
+    font-size: 28px;
+    padding-bottom: 0;
+  }
+  .job-type__subtitle {
+    display: none;
+  }
+  .job-type__form {
+    justify-content: center;
+  }
+  .job-type__form-title {
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 16px;
+  }
+  .job-type__text {
+    font-size: 14px;
+    line-height: 21px;
+    overflow: hidden;
+  }
+  .job-type__work-label {
+    width: 345px;
+    height: 150px;
+    background: none;
+  }
+  .job-type__choise {
+    margin-left: 15px;
   }
   .svg-manufacturer-search-dims {
     width: 68px;
